@@ -1,12 +1,13 @@
 mixin menu(active_name)
-  each val in ['top', 'member', 'repertory', 'guest book', 'biography', 'gallery', 'link', 'mail']
-    if val === active_name
-      +item-current(val)
-    else
-      +item-other(val)
+  ul
+    each val in ['top', 'member', 'repertory', 'guest book', 'biography', 'gallery', 'link', 'mail']
+      if val === active_name
+        +item-current(val)
+      else
+        +item-other(val)
 
 mixin item-current(name)
-  li
+  li.current
     a= name
 
 mixin item-other(name)

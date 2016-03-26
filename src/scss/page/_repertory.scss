@@ -1,3 +1,15 @@
 .page-repertory {
-  ;
+  .main {
+    dl {
+      dt {
+        margin: 20px 0 0;
+
+        font-weight: bold;
+      }
+
+      dd {
+        margin: 10px 0;
+      }
+    }
+  }
 }

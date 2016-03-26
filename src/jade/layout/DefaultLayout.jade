@@ -62,11 +62,11 @@ html(lang="ja")
   body(class="page-#{page_id}")
     .wrapper
       block ContentBlock
-        header
+        header.header
           block header
-        main
+        main.main
           block main
-        nav
+        nav.nav
           block nav
             +menu(page_id)
 

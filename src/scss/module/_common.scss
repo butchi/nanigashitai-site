@@ -10,10 +10,107 @@ main {
   display: block;
 }
 
-.main {
-  position: relative;
-
+.wrapper {
   width: 680px;
 
   margin: 0 auto;
+}
+
+.header {
+  height: 100px;
+
+  background-color: #000;
+  border-radius: 10px;
+
+  color: #fff;
+}
+
+.page-member, .page-repertory, .page-biography, .page-gallery, .page-link {
+  .header {
+    padding: 0 30px;
+
+    .heading {
+      line-height: 100px;
+
+      font-size: 4.8rem;
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+}
+
+.main {
+  box-sizing: border-box;
+
+  position: relative;
+
+  width: 465px;
+  float: left;
+
+  margin-top: 10px;
+  padding: 10px;
+
+  border-radius: 10px;
+
+  background-color: #efefef;
+
+  font-size: 1.3rem;
+
+  .catch {
+    font-weight: bold;
+  }
+}
+
+.nav {
+  position: relative;
+
+  width: 200px;
+  float: right;
+
+  margin-top: 10px;
+
+  ul {
+    li {
+      width: 100%;
+      height: 50px;
+
+      line-height: 50px;
+
+      border-radius: 10px;
+
+      background-color: #404144;
+
+      color: white;
+
+      text-align: center;
+
+      font-size: 18px;
+      font-style: italic;
+      font-weight: bold;
+
+      + li {
+        margin-top: 5px;
+      }
+
+      &:hover {
+        background-color: lighten(#404144, 20%);
+      }
+
+      a {
+        display: inline-block;
+
+        width: 100%;
+        height: 100%;
+
+        color: inherit;
+        text-decoration: inherit;
+      }
+
+      &.current {
+        background-color: #efefef;
+
+        color: #404144;
+      }
+    }
+  }
 }
