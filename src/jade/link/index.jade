@@ -1,7 +1,7 @@
-extends layout/DefaultLayout
+extends /layout/DefaultLayout
 
 prepend ConfigBlock
-  - page_name = 'repertory'
+  - page_name = 'link'
 
 // append StylesheetBlock
 
@@ -11,7 +11,7 @@ block ContentBlock
   // geoguide start
   div(align='center')
     script(language='javascript').
-      var jps=382116062;var jpt=1458968315
+      var jps=382116062;var jpt=1458968432
     script(language='javascript', src='http://bc.geocities.yahoo.co.jp/js/gg.js')
   // geoguide end
   center
@@ -30,7 +30,7 @@ block ContentBlock
               td(height='60', valign='top')
                 font(face='', color='ffffff', size='+5')
                   b
-                    em repertory
+                    em link
                 br
                 img(src='http://img.yahoo.co.jp/images/clear.gif', width='1', height='5')
                 br
@@ -65,112 +65,25 @@ block ContentBlock
                     td(height='300')
                       font(face='', size='-1')
                         b
-                          | 某隊の一風変わったレパートリーをご覧下さい！
+                          | 某隊のお友達のページです
                       br
                       br
                       font(color='666666', size='-1')
-                        | ・よしやのずんどこ節
-                        br
-                        | 初めて取り組んだ曲。さぁみんなで「ズン♪ズンズンズンドコ　よしや！！！」
-                        br
-                        br
-                        | ・どいね
-                        br
-                        | ご存知モザイク作詞の金沢弁の曲。モザイクとは一味違う混声のどいねはどいね？
-                        br
-                        br
-                        | ・マツケンサンバ
-                        br
-                        | 二度と楽譜は作らないと心に決めた曲（モア談）
-                        br
-                        | 楽しい曲のはずなのに歌ってる本人達は息切れな曲。上に同じく二度と楽譜は作るまいと決めました（たかこ談）
-                        br
-                        br
-                        | ・ススミダス→
-                        br
-                        | ノリでヒップホップに手を出した！みんなラッパーに大変身！？
-                        br
-                        br
-                        | ・La Bamba
-                        br
-                        | ヘソ出しルックで踊り狂いながら歌う隊長をイメージして編曲しました(・∀・)さぁみんなもLet's Dance!!!
-                        br
-                        br
-                        | ・Dream Drive
-                        br
-                        | テンションとともに息も相当上がってしまうほどノリノリな曲。走り出せ！
-                        br
-                        br
-                        | ・横須賀ストーリー
-                        br
-                        | 「これっきり？もうこれっきりなの？」「う～ん、どうでしょう（ぶっち談）」
-                        br
-                        object(width='425', height='344')
-                          param(name='movie', value='http://www.youtube.com/v/FnVIYZ0Lx_o?fs=1&hl=ja_JP')
-                          param(name='allowFullScreen', value='true')
-                          param(name='allowscriptaccess', value='always')
-                          embed(src='http://www.youtube.com/v/FnVIYZ0Lx_o?fs=1&hl=ja_JP', type='application/x-shockwave-flash', allowscriptaccess='always', allowfullscreen='true', width='425', height='344')
-                        br
-                        | ・Look Back Again
-                        br
-                        | 某隊唯一のフツーの曲。何だか新鮮！？
-                        br
-                        br
-                        | ・ミチシルベ
-                        br
-                        | また作ってしまいました（笑）（モア談）
-                        br
-                        | ちょっとしっとり、フィナーレっぽい曲なので、ラストにピッタリのはず。みんなで「ラーララララララーラララララー♪」って歌ってほしい☆
-                        br
-                        br
-                        | ・クリスマスメドレー
-                        br
-                        | モアのジングルベルロックがいい味出してます
-                        br
-                        br
-                        | ・tunak tunak tun
-                        br
-                        | グループ内で話題となった動画の曲がなんと実現！
-                        br
-                        br
-                        | ・LOVE YOU ONLY
-                        br
-                        | 最後の「オンリ～ユ～」を必見！
-                        br
-                        br
-                        | ・My Gift to You
-                        br
-                        | 某隊としては珍しいバラード曲
-                        br
-                        br
-                        | ・森のくまさん
-                        br
-                        | 振り付け＆小ネタ付き
-                        br
-                        br
-                        | ・しあわせなら手をたたこう
-                        br
-                        | 童謡シリーズ
-                        br
-                        br
-                        | ・花嫁
-                        br
-                        | 懐メロシリーズ
-                        br
-                        br
-                        | ・手紙
-                        br
-                        | 熱唱系
-                        br
-                        br
-                        | ・愛をこめて花束を
-                        br
-                        | ふゆきがたか～き～に向けて。サビで実際に花束を渡しました
-                        br
-                        br
-                        br
-                        | この他にも・・・！！
-                        | ・
+                        ul
+                          li
+                            a(href='http://melomelo.web.infoseek.co.jp/') 金沢大学アカペラサークル「MeloMelo」
+                          li
+                            a(href='http://hidebbs.net/bbs/supernight') 北陸アカペラ伝言板
+                          li
+                            a(href='http://www.geocities.jp/acappella_gap/') GAP
+                          li
+                            a(href='http://ese.gouketu.com/') EsE
+                          li
+                            a(href='http://sound.jp/mu-sounds/') μ sounds
+                          li
+                            a(href='http://www.geocities.jp/tokotoko1984/') Bebe Origin
+                          li
+                            a(href='http://apois6.web.fc2.com/') a PoiS
           table(width='465', cellpadding='0', cellspacing='0', border='0')
             tr
               td(width='10')
@@ -242,30 +155,31 @@ block ContentBlock
           table(width='200', cellpadding='0', cellspacing='0', border='0')
             tr
               td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/lg_l_top.gif')
-              td(bgcolor='efefef', width='180')
+                img(src='http://pic.geocities.jp/images/gl/03/dg_l_top.gif')
+              td(bgcolor='404144', width='180')
                 img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
               td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/lg_r_top.gif')
-            tr(bgcolor='efefef')
+                img(src='http://pic.geocities.jp/images/gl/03/dg_r_top.gif')
+            tr(bgcolor='404144')
               td(colspan='3')
-                table(width='100%', cellpadding='1', cellspacing='0', border='0', bgcolor='efefef')
+                table(width='100%', cellpadding='1', cellspacing='0', border='0', bgcolor='404144')
                   tr
                     td
                       table(width='100%', cellpadding='0', cellspacing='0', border='0')
                         tr
                           td
-                            font(size='2', color='000000') + 
-                            font(face='', size='+1', color='000000')
-                              b
-                                em repertory
+                            font(size='2', color='ffffff') + 
+                            a(href='http://www.geocities.jp/nanigashiitai/repertory.html')
+                              font(face='', size='+1', color='ffffff')
+                                b
+                                  em repertory
             tr
               td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/lg_l_bottom.gif')
-              td(bgcolor='efefef', width='180')
+                img(src='http://pic.geocities.jp/images/gl/03/dg_l_bottom.gif')
+              td(bgcolor='404144', width='180')
                 img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
               td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/lg_r_bottom.gif')
+                img(src='http://pic.geocities.jp/images/gl/03/dg_r_bottom.gif')
           table(width='200', cellpadding='0', cellspacing='0', border='0')
             tr
               td(width='10')
@@ -353,31 +267,30 @@ block ContentBlock
           table(width='200', cellpadding='0', cellspacing='0', border='0')
             tr
               td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_top.gif')
-              td(bgcolor='404144', width='180')
+                img(src='http://pic.geocities.jp/images/gl/03/lg_l_top.gif')
+              td(bgcolor='efefef', width='180')
                 img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
               td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_top.gif')
-            tr(bgcolor='404144')
+                img(src='http://pic.geocities.jp/images/gl/03/lg_r_top.gif')
+            tr(bgcolor='efefef')
               td(colspan='3')
-                table(width='100%', cellpadding='1', cellspacing='0', border='0', bgcolor='404144')
+                table(width='100%', cellpadding='1', cellspacing='0', border='0', bgcolor='efefef')
                   tr
                     td
                       table(width='100%', cellpadding='0', cellspacing='0', border='0')
                         tr
                           td
-                            font(size='2', color='ffffff') + 
-                            a(href='http://www.geocities.jp/nanigashiitai/link.html')
-                              font(face='', size='+1', color='ffffff')
-                                b
-                                  em link
+                            font(size='2', color='000000') + 
+                            font(face='', size='+1', color='000000')
+                              b
+                                em link
             tr
               td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_bottom.gif')
-              td(bgcolor='404144', width='180')
+                img(src='http://pic.geocities.jp/images/gl/03/lg_l_bottom.gif')
+              td(bgcolor='efefef', width='180')
                 img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
               td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_bottom.gif')
+                img(src='http://pic.geocities.jp/images/gl/03/lg_r_bottom.gif')
           table(width='200', cellpadding='0', cellspacing='0', border='0')
             tr
               td(width='10')
