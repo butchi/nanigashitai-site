@@ -1,0 +1,26 @@
+{
+  "name": "hashaby",
+  "version": "0.1.0",
+  "description": "URI fragment extension",
+  "main": "hashaby.min.js",
+  "authors": [
+    "IWABUCHI Yuuki"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "hash",
+    "fragment"
+  ],
+  "moduleType": [],
+  "homepage": "http://butchi.jp/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "hashaby": "*"
+  }
+}
