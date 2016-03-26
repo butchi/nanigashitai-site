@@ -3,3 +3,11 @@ html {
 
 body {
   background-color: #c4c3c2; }
+
+main {
+  display: block; }
+
+.main {
+  position: relative;
+  width: 680px;
+  margin: 0 auto; }
