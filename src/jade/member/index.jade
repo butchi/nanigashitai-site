@@ -2,337 +2,52 @@ extends /layout/DefaultLayout
 
 prepend ConfigBlock
   - page_name = 'member'
+  - page_id = 'member'
 
 // append StylesheetBlock
 
 // append JavascriptBlock
 
-block ContentBlock
-  // geoguide start
-  div(align='center')
-    script(language='javascript').
-      var jps=382116062;var jpt=1458968297
-    script(language='javascript', src='http://bc.geocities.yahoo.co.jp/js/gg.js')
-  // geoguide end
-  center
-    table(width='675', cellpadding='0', cellspacing='0', border='0')
-      tr
-        td(width='10')
-          img(src='http://pic.geocities.jp/images/gb/black_l_top.gif')
-        td(bgcolor='000000', width='655')
-          img(src='http://img.yahoo.co.jp/images/clear.gif', width='655', height='1')
-        td(width='10')
-          img(src='http://pic.geocities.jp/images/gb/black_r_top.gif')
-      tr(bgcolor='000000')
-        td(colspan='3')
-          table(width='100%', cellpadding='10', cellspacing='0', border='0', bgcolor='000000')
-            tr
-              td(height='60', valign='top')
-                font(face='', color='ffffff', size='+5')
-                  b
-                    em member
-                br
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='1', height='5')
-                br
-      tr
-        td(width='10')
-          img(src='http://pic.geocities.jp/images/gb/black_l_bottom.gif')
-        td(bgcolor='000000', width='655')
-          img(src='http://img.yahoo.co.jp/images/clear.gif', width='655', height='1')
-        td(width='10')
-          img(src='http://pic.geocities.jp/images/gb/black_r_bottom.gif')
-    table(cellpadding='0', cellspacing='0', border='0')
-      tr
-        td
-          img(src='http://img.yahoo.co.jp/images/clear.gif', width='1', height='10')
-    table(width='675', cellpadding='0', cellspacing='0', border='0')
-      tr
-        td(valign='top', width='465')
-          // - contents
-          table(width='465', cellpadding='0', cellspacing='0', border='0')
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/lg_l_top.gif')
-              td(bgcolor='efefef', width='445')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='445', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/lg_r_top.gif')
-          table(width='465', cellpadding='0', cellspacing='0', border='0')
-            tr(bgcolor='efefef')
-              td
-                table(width='100%', border='0', cellspacing='0', cellpadding='10')
-                  tr
-                    td(height='300')
-                      font(face='', size='-1')
-                        b
-                          | 某隊の隊員紹介です
-                      br
-                      br
-                      font(color='666666', size='-1')
-                        | 隊長
-                        br
-                        | ・モア
-                        br
-                        | いわずとしれた某隊の隊長。その「唸り」と「笑いのツボ」で隊員を引っ張ってます（byたかこ）
-                        br
-                        br
-                        | 隊員
-                        br
-                        | ・たかこ
-                        br
-                        | きれいな高音が魅力のオンナノコ。最近風邪もひいてないのに声がおかしいらしい。声変わりか！？（byふゆき）
-                        br
-                        br
-                        | ・ふゆき
-                        br
-                        | 三重からやってきた頼れるアネゴ。得意技→”見えやん"(／-＼)              (byよしや)
-                        br
-                        br
-                        | ・よしや
-                        br
-                        | グループ１の目立ちたがり屋さん。でも練習では仕切り屋さんな一面も発揮（byけいた）
-                        br
-                        br
-                        | ・ぶっち
-                        br
-                        | 普段はあまりしゃべらない、でも常にボケを考えている彼・・。ひとたび口を開けばその独特な雰囲気と低音は世界に平和と微笑みをもたらします！ボケも音もハズさない、大野出身ベーシスト、それがぶっち！（byモア）
-                        br
-                        br
-                        | ・けいた
-                        br
-                        | 持ち前のひょうきんな人柄で某隊のテンションを最大限に引き上げる一方、独特なレパートリーにかなうパーカッションをこなす"最も忙しい隊員"(byぶっち)
-          table(width='465', cellpadding='0', cellspacing='0', border='0')
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/lg_l_bottom.gif')
-              td(width='445', bgcolor='efefef')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='445', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/lg_r_bottom.gif')
-          // - /contents
-        td(valign='top', width='10')
-          img(src='http://img.yahoo.co.jp/images/clear.gif', width='10', height='1')
-        td(valign='top', width='200')
-          table(width='200', cellpadding='0', cellspacing='0', border='0')
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_top.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_top.gif')
-            tr(bgcolor='404144')
-              td(colspan='3')
-                table(width='100%', cellpadding='1', cellspacing='0', border='0', bgcolor='404144')
-                  tr
-                    td
-                      table(width='100%', cellpadding='0', cellspacing='0', border='0')
-                        tr
-                          td
-                            font(size='2', color='ffffff') + 
-                            a(href='http://www.geocities.jp/nanigashiitai/')
-                              font(face='', size='+1', color='ffffff')
-                                b
-                                  em top
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_bottom.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_bottom.gif')
-          table(width='200', cellpadding='0', cellspacing='0', border='0')
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/lg_l_top.gif')
-              td(bgcolor='efefef', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/lg_r_top.gif')
-            tr(bgcolor='efefef')
-              td(colspan='3')
-                table(width='100%', cellpadding='1', cellspacing='0', border='0', bgcolor='efefef')
-                  tr
-                    td
-                      table(width='100%', cellpadding='0', cellspacing='0', border='0')
-                        tr
-                          td
-                            font(size='2', color='000000') + 
-                            font(face='', size='+1', color='000000')
-                              b
-                                em member
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/lg_l_bottom.gif')
-              td(bgcolor='efefef', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/lg_r_bottom.gif')
-          table(width='200', cellpadding='0', cellspacing='0', border='0')
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_top.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_top.gif')
-            tr(bgcolor='404144')
-              td(colspan='3')
-                table(width='100%', cellpadding='1', cellspacing='0', border='0', bgcolor='404144')
-                  tr
-                    td
-                      table(width='100%', cellpadding='0', cellspacing='0', border='0')
-                        tr
-                          td
-                            font(size='2', color='ffffff') + 
-                            a(href='http://www.geocities.jp/nanigashiitai/repertory.html')
-                              font(face='', size='+1', color='ffffff')
-                                b
-                                  em repertory
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_bottom.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_bottom.gif')
-          table(width='200', cellpadding='0', cellspacing='0', border='0')
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_top.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_top.gif')
-            tr(bgcolor='404144')
-              td(colspan='3')
-                table(width='100%', cellpadding='1', cellspacing='0', border='0', bgcolor='404144')
-                  tr
-                    td
-                      table(width='100%', cellpadding='0', cellspacing='0', border='0')
-                        tr
-                          td
-                            font(size='2', color='ffffff') + 
-                            a(href='http://nanigashitai.1616bbs.com/bbs/')
-                              font(face='', size='+1', color='ffffff')
-                                b
-                                  em guest book
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_bottom.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_bottom.gif')
-          table(width='200', cellpadding='0', cellspacing='0', border='0')
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_top.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_top.gif')
-            tr(bgcolor='404144')
-              td(colspan='3')
-                table(width='100%', cellpadding='1', cellspacing='0', border='0', bgcolor='404144')
-                  tr
-                    td
-                      table(width='100%', cellpadding='0', cellspacing='0', border='0')
-                        tr
-                          td
-                            font(size='2', color='ffffff') + 
-                            a(href='http://www.geocities.jp/nanigashiitai/biography.html')
-                              font(face='', size='+1', color='ffffff')
-                                b
-                                  em biography
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_bottom.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_bottom.gif')
-          table(width='200', cellpadding='0', cellspacing='0', border='0')
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_top.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_top.gif')
-            tr(bgcolor='404144')
-              td(colspan='3')
-                table(width='100%', cellpadding='1', cellspacing='0', border='0', bgcolor='404144')
-                  tr
-                    td
-                      table(width='100%', cellpadding='0', cellspacing='0', border='0')
-                        tr
-                          td
-                            font(size='2', color='ffffff') + 
-                            a(href='http://www.geocities.jp/nanigashiitai/gallery.html')
-                              font(face='', size='+1', color='ffffff')
-                                b
-                                  em gallery
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_bottom.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_bottom.gif')
-          table(width='200', cellpadding='0', cellspacing='0', border='0')
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_top.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_top.gif')
-            tr(bgcolor='404144')
-              td(colspan='3')
-                table(width='100%', cellpadding='1', cellspacing='0', border='0', bgcolor='404144')
-                  tr
-                    td
-                      table(width='100%', cellpadding='0', cellspacing='0', border='0')
-                        tr
-                          td
-                            font(size='2', color='ffffff') + 
-                            a(href='http://www.geocities.jp/nanigashiitai/link.html')
-                              font(face='', size='+1', color='ffffff')
-                                b
-                                  em link
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_bottom.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_bottom.gif')
-          table(width='200', cellpadding='0', cellspacing='0', border='0')
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_top.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_top.gif')
-            tr(bgcolor='404144')
-              td(colspan='3')
-                table(width='100%', cellpadding='1', cellspacing='0', border='0', bgcolor='404144')
-                  tr
-                    td
-                      table(width='100%', cellpadding='0', cellspacing='0', border='0')
-                        tr
-                          td
-                            font(size='2', color='ffffff') + 
-                            a(href='mailto:nanigasi_tai@yahoo.co.jp')
-                              font(face='', size='+1', color='ffffff')
-                                b
-                                  em mail
-            tr
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_l_bottom.gif')
-              td(bgcolor='404144', width='180')
-                img(src='http://img.yahoo.co.jp/images/clear.gif', width='180', height='1')
-              td(width='10')
-                img(src='http://pic.geocities.jp/images/gl/03/dg_r_bottom.gif')
+block header
+  h1.heading
+    | member
+
+block main
+  .catch
+    | 某隊の隊員紹介です
+
+  h2
+    | 隊長
+  dl
+    dt
+      | モア
+    dd
+      | いわずとしれた某隊の隊長。その「唸り」と「笑いのツボ」で隊員を引っ張ってます（byたかこ）
+
+  h2
+    | 隊員
+  dl
+    dt
+      | たかこ
+    dd
+      | きれいな高音が魅力のオンナノコ。最近風邪もひいてないのに声がおかしいらしい。声変わりか！？（byふゆき）
+
+    dt
+      | ふゆき
+    dd
+      | 三重からやってきた頼れるアネゴ。得意技→”見えやん"(／-＼)              (byよしや)
+
+    dt
+      | よしや
+    dd
+      | グループ１の目立ちたがり屋さん。でも練習では仕切り屋さんな一面も発揮（byけいた）
+
+    dt
+      | ぶっち
+    dd
+      | 普段はあまりしゃべらない、でも常にボケを考えている彼・・。ひとたび口を開けばその独特な雰囲気と低音は世界に平和と微笑みをもたらします！ボケも音もハズさない、大野出身ベーシスト、それがぶっち！（byモア）
+
+    dt
+      | けいた
+    dd
+      | 持ち前のひょうきんな人柄で某隊のテンションを最大限に引き上げる一方、独特なレパートリーにかなうパーカッションをこなす"最も忙しい隊員"(byぶっち)

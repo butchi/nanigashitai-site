@@ -18,7 +18,7 @@ DEST = './public'
 gulp.task 'jade', () ->
   locals = require("#{SRC}/config/meta.json");
 
-  return gulp.src(["#{SRC}/jade/**/*.jade", "!#{SRC}/jade/layout/*.jade"])
+  return gulp.src(["#{SRC}/jade/**/*.jade", "!#{SRC}/jade/layout/*.jade", "!#{SRC}/jade/include/*.jade", "!#{SRC}/jade/mixin/*.jade"])
     .pipe jade
       locals: locals,
       basedir: "#{SRC}/jade",

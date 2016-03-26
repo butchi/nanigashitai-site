@@ -1,0 +1,24 @@
+mixin menu(active_name)
+  each val in ['top', 'member', 'repertory', 'guest book', 'biography', 'gallery', 'link', 'mail']
+    if val === active_name
+      +item-current(val)
+    else
+      +item-other(val)
+
+mixin item-current(name)
+  li
+    a= name
+
+mixin item-other(name)
+  if name === 'top'
+    li
+      a(href="/")= name
+  else if name === 'guest book'
+    li
+      a(href="#")= name
+  else if name === 'mail'
+    li
+      a(href="#")= name
+  else
+    li
+      a(href="/#{name}/")= name

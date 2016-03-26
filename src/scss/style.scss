@@ -1,7 +1,8 @@
-html {
-  font-size: 10px;
-}
+@import "module/common";
 
-body {
-  background-color: #c4c3c2;
-}
+@import "page/top";
+@import "page/member";
+@import "page/repertory";
+@import "page/biography";
+@import "page/gallery";
+@import "page/link";

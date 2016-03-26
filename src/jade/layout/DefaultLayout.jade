@@ -1,3 +1,5 @@
+include /mixin/menu
+
 block ConfigBlock
   - title = page_name ? [page_name, site_name].join(' | ') : site_name
 
@@ -55,12 +57,19 @@ html(lang="ja")
     // stylesheet
     script(src="js/lib/html5shiv.min.js")
     block StylesheetBlock
-      link(rel="stylesheet", href="css/style.css")
+      link(rel="stylesheet", href="/css/style.css")
 
-  body
+  body(class="page-#{page_id}")
     .wrapper
       block ContentBlock
+        header
+          block header
+        main
+          block main
+        nav
+          block nav
+            +menu(page_id)
 
     // javascript
     block JavascriptBlock
-      script(src="js/script.js")
+      script(src="/js/script.js")
