@@ -16,9 +16,11 @@ DEST = './public'
 
 # html
 gulp.task 'jade', () ->
+  locals = require("#{SRC}/config/meta.json");
+
   return gulp.src("#{SRC}/jade/*.jade")
     .pipe jade
-      # locals: locals,
+      locals: locals,
       pretty: true,
     .pipe gulp.dest "#{DEST}"
 
